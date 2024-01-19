@@ -1,20 +1,20 @@
 <?php
 class RequestHandler
 {
-    private $mapApi;
+    private $Api;
 
-    public function __construct(Api $mapApi)
+    public function __construct(Api $Api)
     {
-        $this->mapApi = $mapApi;
+        $this->Api = $Api;
     }
 
     public function getAddressByCoordinates($latitude, $longitude)
     {
-        return $this->mapApi->getAddressByCoordinates($latitude, $longitude);
+        return $this->Api->getAddressByCoordinates($latitude, $longitude);
     }
 
     public function getCoordinatesByAddress($address)
     {
-        return $this->mapApi->getCoordinatesByAddress($address);
+        return $this->Api->getCoordinatesByAddress($address);
     }
 }

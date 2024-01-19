@@ -52,8 +52,8 @@ class Api
 
         $location = new Location(
             $firstResult["display_name"],
-            $firstResult["latitude"],
-            $firstResult["longitude"]
+            $firstResult["lat"],
+            $firstResult["lon"]
         );
 
         return $location;
